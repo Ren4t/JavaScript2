@@ -3,7 +3,10 @@
     --header-bg-color: rgb(174, 215, 219);
     --product-item-bg-color: rgb(146, 200, 206);
     --button-bg-color: rgb(248, 224, 7);
-    --shadow-color:rgba(0,0,0,0.5);
+    --button-hover-bg-color: rgb(207, 190, 36);
+    --button-active-bg-color: rgb(175, 163, 54);
+    --shadow-button-active-color:rgba(5, 79, 92, 0.8);
+    --shadow-color:rgba(21, 73, 97, 0.5);
   }
 
 *{
@@ -18,9 +21,22 @@ body{
 button{
     background-color: var(--button-bg-color);
     box-shadow: 0 0 10px var(--shadow-color);
-    border: none;
+    border: 1px solid var(--button-bg-color);
     padding: 2px;
     border-radius: 3px;
+    color: rgb(28, 77, 77);
+}
+button:hover{
+    background-color: var(--button-hover-bg-color);
+  }
+  button:active{
+    background-color: var(--button-active-bg-color);
+    box-shadow: 0 0 6px var(--shadow-button-active-color);
+  }
+
+  button:focus-visible {
+	border: 1px solid #4c51f9;
+	outline: none;
 }
 .container {
     width: 1140px;
