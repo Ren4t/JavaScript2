@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeyBurger</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/hamburgerstyle.css">
+
+</head>
+
+<body>
+    <h1>HeyBurger</h1>
+    <fieldset>
+        <legend>Выбирите гамбургер:</legend>
+        <div>
+            <input type="radio" id="hamburgerChoice1" name="hamburger" value="maxHamburger">
+            <label for="hamburgerChoice1">Большой (100 рублей, 40 калорий)</label>
+        </div>
+        <div>
+            <input type="radio" id="hamburgerChoice2" name="hamburger" value="minHamburger">
+            <label for="hamburgerChoice2">Маленький (50 рублей, 20 калорий)</label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Выбирите начинку:</legend>
+        <div>
+            <input type="radio" id="fillingChoice1" name="filling" value="withCheese">
+            <label for="fillingChoice1">С сыром (+10 рублей, +20 калорий)</label>
+        </div>
+        <div>
+            <input type="radio" id="fillingChoice2" name="filling" value="withSalad">
+            <label for="fillingChoice2">С салатом (+20 рублей, +5 калорий)</label>
+        </div>
+        <div>
+            <input type="radio" id="fillingChoice3" name="filling" value="withPotatoes">
+            <label for="fillingChoice3">С картофелем (+15 рублей, +10 калорий)</label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Дополнительно гамбургер можно:</legend>
+
+        <div>
+            <input type="checkbox" id="spicy" name="spicy" value="spicy">
+            <label for="spicy">посыпать приправой (+15 рублей, +0 калорий)</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="mayonnaise" name="mayonnaise" value="mayonnaise">
+            <label for="mayonnaise">полить майонезом (+20 рублей, +5 калорий)</label>
+        </div>
+    </fieldset>
+    <p>Итого: Цена:<span class="total_cost">0</span> Калорий:<span class="total_calories">0</span></p>
+    <script src="js/hamburger.js"></script>
+</body>
+
+</html>
