@@ -142,7 +142,7 @@ document
   .addEventListener("click", () => cartWindowEl.classList.toggle("hidden"));
 cartWindowEl.addEventListener("click", (event) => {
   if (event.target.classList.value === "add cart-btn") {
-    console.log(event.target.classList.value);
+    console.dir(event.target.parentElement);
   }
-  //cartlist.
+  //не успеваю доделать.
 });
